@@ -2,25 +2,25 @@ macro_wndw_full: macro_wndw_full{
 compatible = "zmk,behavior-macro";
 label = "macro_wndw_full";
 #binding-cells = <0>;
-bindings = <&kp RCMD>, <&kp LEFT_ALT>, <&kp F>;
+bindings = <&kp LG(LA(F))>;
 };
 macro_wndw_center: macro_wndw_center{
 compatible = "zmk,behavior-macro";
 label = "macro_wndw_center";
 #binding-cells = <0>;
-bindings = <&kp RCMD>, <&kp LEFT_ALT>, <&kp C>;
+bindings = <&kp LG(LA(C)))>;
 };
 macro_wndw_left: macro_wndw_left{
 compatible = "zmk,behavior-macro";
 label = "macro_wndw_left";
 #binding-cells = <0>;
-bindings = <&kp RCMD>, <&kp LEFT_ALT>, <&kp LEFT>;
+bindings = <&kp LG(LA(LEFT))>;
 };
 macro_wndw_right: macro_wndw_right{
 compatible = "zmk,behavior-macro";
 label = "macro_wndw_right";
 #binding-cells = <0>;
-bindings = <&kp RIGHT_COMMAND>, <&kp LEFT_ALT>, <&kp RIGHT>;
+bindings = <&kp LG(LA(RIGHT))>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
