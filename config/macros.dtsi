@@ -8,7 +8,7 @@ macro_wndw_center: macro_wndw_center{
 compatible = "zmk,behavior-macro";
 label = "macro_wndw_center";
 #binding-cells = <0>;
-bindings = <&kp LG(LA(C)))>;
+bindings = <&kp LG(LA(C))>;
 };
 macro_wndw_left: macro_wndw_left{
 compatible = "zmk,behavior-macro";
