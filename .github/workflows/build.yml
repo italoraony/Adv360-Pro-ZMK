@@ -43,10 +43,12 @@ jobs:
         run: cat build/right/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
         run: cp build/left/zephyr/zmk.uf2 left.uf2 && cp build/right/zephyr/zmk.uf2 right.uf2
+      - name: Add SHORT_SHA env property with commit short sha
+        run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
       - name: Archive (Adv360)
         uses: actions/upload-artifact@v3
         with:
-          name: firmware
+          name: firmware-${{github.ref_name}}-${SHORT_SHA}
           path: |
             left.uf2
             right.uf2
